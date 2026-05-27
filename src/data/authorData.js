@@ -2,6 +2,7 @@ export const authorData = {
   name: "Ketriana Yvonne",
   fullName: "Ketriana Yvonne",
   email: "",
+  phone: "(718) 781-7579",
   tagline: "Sequin Soul: Poetry from the Spirit",
 
   book: {

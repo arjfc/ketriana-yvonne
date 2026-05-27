@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaEnvelope, FaPaperPlane, FaBook, FaStar, FaPenFancy } from 'react-icons/fa';
+import { FaEnvelope, FaPaperPlane, FaBook, FaStar, FaPenFancy, FaPhone } from 'react-icons/fa';
 import { authorData } from '../data/authorData';
 
 const Newsletter = () => {
@@ -32,14 +32,20 @@ const Newsletter = () => {
           Subscribe for updates, poetry reflections, inspirational messages, and new releases from {authorData.name}.
         </p>
 
-        {authorData.email && (
-          <div className="flex items-center justify-center gap-2 mb-8">
+        <div className="flex flex-wrap items-center justify-center gap-3 mb-8">
+          {authorData.email && (
             <div className="backdrop-blur-sm px-5 py-2 rounded-full inline-flex items-center gap-2 bg-white/8">
               <FaEnvelope size={13} className="text-secondary" />
               <span className="text-sm text-dark/80">{authorData.email}</span>
             </div>
-          </div>
-        )}
+          )}
+          {authorData.phone && (
+            <div className="backdrop-blur-sm px-5 py-2 rounded-full inline-flex items-center gap-2 bg-white/8">
+              <FaPhone size={13} className="text-secondary" />
+              <span className="text-sm text-dark/80">{authorData.phone}</span>
+            </div>
+          )}
+        </div>
 
         <form onSubmit={handleSubmit} className="max-w-md mx-auto flex flex-col sm:flex-row gap-4">
           <input
