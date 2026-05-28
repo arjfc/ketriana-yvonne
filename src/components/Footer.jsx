@@ -24,11 +24,24 @@ const Footer = () => {
           </div>
 
           {/* CTA */}
-          <div className="flex justify-center">
-            <button className="font-author text-base font-bold py-4 px-10 rounded-full shadow-2xl transform transition-all duration-300 hover:scale-105 bg-secondary text-primary-dark hover:opacity-90">
-              Read Sequin Soul
-            </button>
+          <div className="mt-6 flex justify-center">
+            <a
+              href="https://buy.stripe.com/7sY5kEdVm6vNfRU8Ey2kw07"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="
+                bg-gradient-to-r from-yellow-400 via-yellow-300 to-yellow-500
+                text-black text-xl font-bold py-8 px-26 rounded-full
+                shadow-2xl
+                transform transition-all duration-300
+                hover:scale-105 hover:shadow-yellow-400/50
+                animate-pulse
+              "
+            >
+              Launch & Go-Live Portal
+            </a>
           </div>
+
 
           {/* Socials */}
           <div className="flex gap-4">
