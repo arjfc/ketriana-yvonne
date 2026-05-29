@@ -42,6 +42,7 @@ const Footer = () => {
             </a>
           </div>
 
+
           {/* Socials */}
           <div className="flex gap-4">
             {[
